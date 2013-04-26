@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app>
+<head>
+	<title>Lainalaskuri</title>
+	<meta name="author" content="Heikki Hokkanen" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+	<script src="calc.js"></script>
+</head>
+<body>
+
+<h1>Lainalaskuri</h1>
+
+<div ng-controller="LoanCalc">
+
+<h2>Tiedot</h2>
+
+<dl>
+
+<dt>Lainan määrä:</dt>
+<dd><input type="text" name="amount" ng-model="amount" ng-change="calc()" /></dd>
+
+<dt>Vuosikorko:</dt>
+<dd><input type="text" name="interest" ng-model="interest" ng-change="calc()" /></dd>
+
+Laina-aika:
+<input type="text" name="years" ng-model="years" ng-change="calc()" /></dd>
+
+</dl>
+
+<h2>Laskelma</h2>
+
+Kuukausierä: {{monthly}}
+
+<h2>Lyhennyserät</h2>
+
+</div>
+
+</body>
+</html>
