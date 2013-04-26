@@ -36,3 +36,7 @@ table tr:nth-child(12n+1) {
 	border-bottom: 3px solid black;
 }
 
+.author {
+	margin-top: 5ex;
+	font-size: smaller;
+}
