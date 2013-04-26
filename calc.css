@@ -1,0 +1,38 @@
+h1 {
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+.info {
+	display: block;
+	float: right;
+}
+
+table {
+	border: none;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+table tr th {
+	background-color: #ddd;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border: 1px solid black;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+table tr td {
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: #eee;
+	text-align: center;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+table tr:nth-child(12n+1) {
+	border-bottom: 3px solid black;
+}
+
