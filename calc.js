@@ -5,12 +5,14 @@ function LoanCalc($scope) {
 	$scope.interest = 6;
 	$scope.years = 25;
 	$scope.months = [];
+	$scope.totalpaid = 0;
 
 	$scope.calc = function() {
 		$scope.monthly = 123;
 		var interest = $scope.interest / 100;
 		var months = $scope.years * 12;
 		$scope.monthly = (Math.pow(1+interest/12, months)*(interest/12)*$scope.amount)/(Math.pow(1+interest/12, 300)-1);
+		$scope.totalpaid = $scope.monthly * months
 
 		var left = $scope.amount;
 		var interestMonth = 0;
