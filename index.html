@@ -33,6 +33,25 @@ Kuukausierä: {{monthly.toFixed(2)}} €
 
 <h2>Lyhennyserät</h2>
 
+<table>
+<tr>
+	<th>Erä</th>
+	<th>Vuosi</th>
+	<th>Kuukausi</th>
+	<th>Korko</th>
+	<th>Lyhennys</th>
+	<th>Jäljellä</th>
+</tr>
+<tr ng-repeat="row in months">
+	<td>{{row.0}}</td>
+	<td>{{row.1}}</td>
+	<td>{{row.2}}</td>
+	<td>€ {{row.3.toFixed(2)}}</td>
+	<td>€ {{row.4.toFixed(2)}}</td>
+	<td>€ {{row.5.toFixed(2)}}</td>
+</tr>
+</table>
+
 </div>
 
 </body>
