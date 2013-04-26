@@ -16,20 +16,20 @@
 
 <dl>
 
-<dt>Lainan määrä:</dt>
+<dt>Lainan määrä (€):</dt>
 <dd><input type="text" name="amount" ng-model="amount" ng-change="calc()" /></dd>
 
-<dt>Vuosikorko:</dt>
+<dt>Vuosikorko (%):</dt>
 <dd><input type="text" name="interest" ng-model="interest" ng-change="calc()" /></dd>
 
-Laina-aika:
+Laina-aika (vuosia):
 <input type="text" name="years" ng-model="years" ng-change="calc()" /></dd>
 
 </dl>
 
 <h2>Laskelma</h2>
 
-Kuukausierä: {{monthly}}
+Kuukausierä: {{monthly.toFixed(2)}} €
 
 <h2>Lyhennyserät</h2>
 
