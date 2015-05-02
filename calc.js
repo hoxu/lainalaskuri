@@ -1,5 +1,9 @@
 // http://www.math.jyu.fi/matyl/peruskurssi/talousmatematiikkaa/korkor3.8.htm
 
+var app = angular.module('app', []);
+
+app.controller('LoanCalc', LoanCalc);
+
 function LoanCalc($scope) {
 	$scope.amount = 100000;
 	$scope.interest = 6;
