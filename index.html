@@ -21,13 +21,13 @@
 <dl>
 
 <dt>Lainan määrä (€):</dt>
-<dd><input type="text" name="amount" ng-model="amount" ng-change="calc()" /></dd>
+<dd><input type="text" name="amount" ng-model="amount" ng-model-options="{debounce: 500}" ng-change="calc()" /></dd>
 
 <dt>Vuosikorko (%):</dt>
-<dd><input type="text" name="interest" ng-model="interest" ng-change="calc()" /></dd>
+<dd><input type="text" name="interest" ng-model="interest" ng-model-options="{debounce: 500}" ng-change="calc()" /></dd>
 
 Laina-aika (vuosia):
-<dd><input type="text" name="years" ng-model="years" ng-change="calc()" /></dd>
+<dd><input type="text" name="years" ng-model="years" ng-model-options="{debounce: 500}" ng-change="calc()" /></dd>
 
 <input type="button" value="Laske" ng-click="calc()"/>
 
